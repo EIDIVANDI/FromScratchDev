@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Example_Data_Layer.Blog>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@{ 
+    foreach (var item in Model)
+    {
+        @Html.DisplayForModel(item.BlogTitle);
+    }
+}
